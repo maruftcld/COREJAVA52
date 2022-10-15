@@ -1,3 +1,5 @@
+package org.idb.r52;
+
 // Data Structure
 // Algorithm
 
