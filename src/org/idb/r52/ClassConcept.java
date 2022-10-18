@@ -1,6 +1,6 @@
 package org.idb.r52;
 
-class ClassConcept {
+ public class ClassConcept {
     // class is a structure
     String name;
     int ID;
@@ -40,7 +40,6 @@ class ClassConcept {
         System.out.println("Sum is " + a);
         abc();
     }
-    
 }
 
 class A{}
