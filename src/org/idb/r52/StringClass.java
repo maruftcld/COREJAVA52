@@ -12,6 +12,20 @@ public class StringClass {
         // string pool
         
         System.out.println(ss.equals(ss1));
+        
+        
+        
+        String str2 = "Java";
+        String snew = new String("Hello");  // two Objects //heap //string constant pool
+        
+        char[] cstr = {'J', 'a', 'v', 'a'};
+        String str = "Java";
+        System.out.println(cstr);
+        System.out.println(str.equals("Java"));
+        System.out.println(str.toCharArray());
+        
+        
+        
     }
     
 }
