@@ -1,6 +1,5 @@
 package org.idb.r52;
 
-
 public abstract class AbstractClassExample {
     int a;
     abstract int n(); //abstract method

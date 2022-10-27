@@ -2,7 +2,6 @@ package org.idb.r52;
 
 public interface InterfaceExample {  
     static final int a = 10;
-    
     int add();
     int edit();
     int delete();
@@ -13,9 +12,6 @@ interface InterfaceExample2 extends InterfaceExample {
     int get();
     int getAll();
 }
-
-
-
 
 class CA{}
 

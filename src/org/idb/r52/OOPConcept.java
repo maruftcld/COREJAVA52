@@ -15,10 +15,10 @@ public class OOPConcept {
     
     public static void main(String[] args) {
         OOPConcept oc = new OOPConcept();
-        //inheritance
-        //polymorphism
-        //encapsulation
-        //abstraction
+        //inheritance - relationship between classes & interfaces
+        //polymorphism - overloading & overriding
+        //encapsulation - data hiding
+        //abstraction - procedure implemention hiding
         OOPConcept.ms();
     }
 }
