@@ -1,5 +1,7 @@
 package org.idb.r52;
 
+import java.util.Arrays;
+
 public class SingleDimensionalArray {
     
     static int rolls[];
@@ -25,5 +27,16 @@ public class SingleDimensionalArray {
        for (int i = 0; i < arrL.length; i++) {
             System.out.println(arrL[i]);
         }
+       
+       
+       
+        int ar[] = {10, 5, 46, 2, 1, 5, 8, 1, 9, 7};
+        Arrays.sort(ar);
+        System.out.println(".................................");
+        for (int i = 0; i < ar.length; i++) {
+            System.out.println(ar[i]);
+        }
+        
+        
     }
 }
