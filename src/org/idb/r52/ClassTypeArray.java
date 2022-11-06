@@ -32,7 +32,8 @@ public class ClassTypeArray {
         for (int i = 0; i < faludas.length; i++) {
             System.out.println(faludas[i].color); 
        }
-        
+             
+
         
         Object[] objs = new Object[2];
         objs[0] =  f1;
@@ -49,5 +50,7 @@ public class ClassTypeArray {
             
             System.out.println(objs[i].getClass().getSimpleName());
         }
+        
+   
     }
 }
