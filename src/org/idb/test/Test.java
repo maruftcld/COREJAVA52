@@ -1,20 +1,32 @@
 package org.idb.test;
 
-import org.idb.r52.ImportConcept;
 
-public class Test {
-    public String book = "JAVA 2.0";
-    
-    public static void main(String[] args) {
-        ImportConcept ic = new ImportConcept();
-        System.out.println(ic);
-        ImportConcept ic1 = new ImportConcept();
-        System.out.println(ic1);
+public class Test implements Runnable{
+
+    @Override
+    public void run() {
+        try {
+            for (int i = 0; i < 5; i++) {
+            System.out.println(i+ " in doSomething");
+            Thread.sleep(1000);
+        }
+        System.out.println("Exiting doSomething...");
+        } catch (InterruptedException ex) {
+            ex.printStackTrace();                    
+        }
+    }
+    public static void main(String[] args) throws InterruptedException {
+        Thread t  =new Thread(new Test());
+        t.start();
+        for (int i = 0; i < 5; i++) {
+            System.out.println(i+ " in main");
+            Thread.sleep(500);
+        }
+        System.out.println("Exiting main...");
         
-        
-        System.out.println(ic == ic1);
-        
-       // int output = ic.sum(10, 20);
-       // System.out.println(output);
+    }
+
+    void set(String l, String m, String n) {
+        throw new UnsupportedOperationException("Not supported yet."); //To change body of generated methods, choose Tools | Templates.
     }
 }
