@@ -11,7 +11,7 @@ public class ThreadExample extends Thread{
                 System.out.println("t1 : " + i);
                 Thread.sleep(500);
             } catch (InterruptedException ex) {
-            
+                System.out.println(ex);
             }
         }
     }   
@@ -32,7 +32,14 @@ class ThreadExample1 extends Thread{
 }
 class ThreadTest {
     public static void main(String[] args) {
-        new ThreadExample().start();
-        new ThreadExample1().start();
+        ThreadExample te = new ThreadExample();
+        ThreadExample1 te1 = new ThreadExample1();
+        te.setName("TH1");
+        System.out.println(te.getName());
+        System.out.println(te.getId());
+        System.out.println(te1.getName());
+        System.out.println(te1.getId());
+        te.start();
+        te1.start();
     }
 }

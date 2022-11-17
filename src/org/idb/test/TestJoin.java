@@ -8,12 +8,12 @@ public class TestJoin implements Runnable {
         try {
             Thread t = new Thread(new TestJoin());
             t.start();
-            System.out.println("Started");
+            System.out.println("besides thread.....");
             t.join();
             //Thread.yield();
-            System.out.println("Complete1");
-            System.out.println("Complete2");
-            System.out.println("Complete3");
+            System.out.println("25000 withdraw");
+            //System.out.println("Complete2");
+            //System.out.println("Complete3");
         } catch (Exception ex) {
             System.err.print(ex);
         }
@@ -22,11 +22,11 @@ public class TestJoin implements Runnable {
 
     @Override
     public void run() {
-        System.out.println("Running...");
+        System.out.println("deposit 500000...");
         for (int i = 0; i < 10; i++) {
             try {
                 System.out.println(i);
-                Thread.sleep(50);
+                Thread.sleep(100);
             } catch (InterruptedException ex) {
                ex.printStackTrace();
             }

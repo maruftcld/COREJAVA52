@@ -10,8 +10,6 @@ public class TestClock {
         tick.start();
         tock.start();//notify
         tick.join();
-        tock.join();
-   
-        
+        tock.join();   
     }
 }

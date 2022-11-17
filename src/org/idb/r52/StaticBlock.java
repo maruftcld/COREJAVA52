@@ -22,9 +22,12 @@ public class StaticBlock {
         System.out.println("main method");
         StaticBlock sb = new StaticBlock();
         sb.test();
+        sb.notifyAll();
+        
     }
     
     static {
         System.err.println("static block 3");
     }
+    
 }
