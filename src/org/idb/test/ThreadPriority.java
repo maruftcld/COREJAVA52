@@ -11,8 +11,8 @@ public class ThreadPriority {
         m1.setName("T1");
         T2 m2 = new T2();
         m2.setName("T2");
-        //m1.setPriority(Thread.MIN_PRIORITY);
-        m2.setPriority(Thread.MAX_PRIORITY);
+        m1.setPriority(Thread.MIN_PRIORITY);
+        //m2.setPriority(Thread.MAX_PRIORITY);
         m1.start();
         m2.start();
     }

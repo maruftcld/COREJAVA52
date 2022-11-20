@@ -9,6 +9,7 @@ public class TestClock {
         Thread tock = new Thread(new Tock());
         tick.start();
         tock.start();//notify
+       
         tick.join();
         tock.join();   
     }

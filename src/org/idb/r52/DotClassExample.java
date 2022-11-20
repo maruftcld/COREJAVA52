@@ -17,6 +17,7 @@ public class DotClassExample {
        Person pp = Person.class.newInstance();
        System.out.println(pp.age);
        
+       Class.forName("org.idb.r52.Person").newInstance();
         
         
 //        Field[] f = Person.class.getDeclaredFields();

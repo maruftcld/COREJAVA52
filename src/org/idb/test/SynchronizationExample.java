@@ -13,7 +13,7 @@ public class SynchronizationExample extends Thread{
     synchronized void show(){
         try {
             for (int i = 0; i < 5; i++) {
-                System.out.println(i);
+                System.out.println(Thread.currentThread().getName() + " " +i);
                 Thread.sleep(300 * (long) (Math.random()*10));
             }
         } catch (Exception e) {
